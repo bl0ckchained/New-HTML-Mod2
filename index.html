@@ -7,7 +7,95 @@
     <title>Mod 2</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    My name is Chad!!!
-  </body>
+    <section>
+    <nav>
+        <img src =./FES.svg alt="FES" class="logo">
+        <ul>
+          <li><a href="about"> About</a></li>
+          <li><a href="discord"> Discord</a></li>
+          <li><a href="contact"> Contact</a></li>
+          </ul>
+    </nav>
+    <header>
+      <div class="row">
+        <div class="home__description">
+        <h1>Best place to learn Frontend!</h1>
+        <p class="subheader">Go from absolute beginner to pro with a simplified process.</p>
+        <button class="home__description--button">Start Now</button>
+        </div>
+      <figure>
+        <img src="./laptop.png" alt="laptop">
+      </figure>
+    </div>
+    </header>
+    </section>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="row">
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
+            We are a team of talented developers who have a passion for teaching. We are committed to making learning frontend development accessible to everyone. We believe the best way to learn is by doing. That's why we have created a platform that will give you the skills you need to become a professional frontend developer.
+            </p>
+            <br/>
+            <p class="about__description--para">
+            Our platform is designed to be easy to use and interactive. You will learn by building real projects that will help you develop the skills you need to succeed in the industry. Whether you are a complete beginner or an experienced developer looking to upskill, we have something for you.
+            </p>
+          </div>
+          <figure class="about__img-wrapper">
+            <img src="./about.jpg" alt="team">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="discord">
+      <h2>Discord</h2>
+      <div class="row">
+        <div class="section__description">
+          <figure class="about__img-wrapper">
+            <img src="./discord.png" alt="discord">
+          </figure>
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
+            Join our Discord community to connect with other learners and get help from our team of experts. Our Discord server is a great place to ask questions, share your projects, and get feedback on your work. Whether you are looking for help with a specific problem or just want to chat with other developers, our Discord server is the place to be.
+            </p>
+            <p class="section__description--para">
+            Our team of experts is always on hand to help you with any questions you may have. We are committed to providing you with the support you need to succeed in your learning journey. Join our Discord community today and start connecting with other learners from around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="jane@example.com">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required>Cool website, let's get connected!</textarea>
+          <button type="submit">Contact Us!</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <img class="footer__logo" src =./FES.svg alt="FES" class="logo">
+      <div class="footer__links">
+        <a class="footer__link" href="about">About</a>
+        <a class="footer__link" href="discord">Discord</a>
+        <a class="footer__link" href="contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
+      </div>
+        <p>&copy; 2021 FES. All rights reserved.</p>
+    </footer>
+      </body>
 </html>
